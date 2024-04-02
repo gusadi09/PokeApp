@@ -14,6 +14,8 @@ final class PokemonDetailViewModel: ObservableObject {
     @Published var phase: Phase = .initial
     @Published var isError: Bool = false
     
+    @Published var segment: DetailTabState = .overview
+    
     private let pokemonRepository: PokemonRepository
     
     let pokeId: String

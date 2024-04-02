@@ -17,7 +17,15 @@ struct PokemonDetailView: View {
             Color.pokeLight
                 .ignoresSafeArea()
             
-            
+            VStack {
+                Divider()
+                    .frame(height: 1)
+                    .padding(.bottom, 3)
+                
+                segmentedView()
+                
+                swipedView()
+            }
         }
         .onAppear {
             viewModel.onFetchDetail()
@@ -39,6 +47,34 @@ struct PokemonDetailView: View {
             }
         }
         
+    }
+    
+    @ViewBuilder
+    func segmentedView() -> some View {
+        Picker("", selection: $viewModel.segment) {
+            Text("Overview")
+                .tag(DetailTabState.overview)
+            
+            Text("Evolution")
+                .tag(DetailTabState.evolution)
+        }
+        .pickerStyle(.segmented)
+        .segmentColor(selected: .pokePrimary, selectedText: .white, text: .pokePrimary)
+        .padding()
+    }
+    
+    @ViewBuilder
+    func swipedView() -> some View {
+        TabView(selection: $viewModel.segment) {
+            overview()
+                .foregroundStyle(.black)
+                .tag(DetailTabState.overview)
+            
+            Text("Evolution")
+                .foregroundStyle(.black)
+                .tag(DetailTabState.evolution)
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
 }
 

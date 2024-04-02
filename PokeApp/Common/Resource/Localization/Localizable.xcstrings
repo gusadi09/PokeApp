@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "%@ :" : {
+
+    },
     "Attention" : {
       "localizations" : {
         "id" : {
@@ -33,6 +39,9 @@
         }
       }
     },
+    "Evolution" : {
+
+    },
     "Fetch pokemons..." : {
       "extractionState" : "stale",
       "localizations" : {
@@ -45,6 +54,9 @@
       }
     },
     "Fetching pokemons..." : {
+
+    },
+    "Height : %@m" : {
 
     },
     "OK" : {
@@ -67,6 +79,12 @@
         }
       }
     },
+    "Overview" : {
+
+    },
+    "Pokemon List" : {
+
+    },
     "Retry" : {
       "localizations" : {
         "id" : {
@@ -76,6 +94,15 @@
           }
         }
       }
+    },
+    "Stats" : {
+
+    },
+    "Type : %@" : {
+
+    },
+    "Weight : %@Kg" : {
+
     },
     "You're not connect to active network, please reconnect" : {
       "localizations" : {
