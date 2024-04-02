@@ -23,7 +23,7 @@ extension Pokemon {
         }
         
         self.init(
-            id: response.id ?? 0,
+            pokeId: response.id ?? 0,
             name: response.name ?? "",
             height: response.height ?? 0,
             weight: response.weight ?? 0,
@@ -54,7 +54,7 @@ extension PokemonType {
 extension Species {
     convenience init(from response: SpeciesResponse) {
         self.init(
-            id: response.id ?? 0,
+            specId: response.id ?? 0,
             evolutionChain: SpeciesEvolutionChain(from: response.evolutionChain ?? SpeciesResponse.EvolutionChainResponse(url: URL(string: "") ?? (NSURL() as URL)))
         )
     }
@@ -68,7 +68,7 @@ extension SpeciesEvolutionChain {
 
 extension EvolutionLink {
     convenience init(from response: EvolutionLinkResponse) {
-        self.init(id: response.id ?? 0, chain: ChainLink(from: response.chain ?? ChainLinkResponse(species: nil, evolvesTo: nil)))
+        self.init(evoId: response.id ?? 0, chain: ChainLink(from: response.chain ?? ChainLinkResponse(species: nil, evolvesTo: nil)))
     }
 }
 
@@ -90,7 +90,7 @@ extension NameWrapperResponse {
 extension PokemonResponse {
     init(from object: Pokemon) {
         self.init(
-            id: object.id,
+            id: object.pokeId,
             name: object.name,
             height: object.height,
             weight: object.weight,
@@ -121,7 +121,7 @@ extension PokemonTypeResponse {
 extension SpeciesResponse {
     init(from object: Species) {
         self.init(
-            id: object.id,
+            id: object.specId,
             evolutionChain: SpeciesResponse.EvolutionChainResponse(
                 url: URL(string: object.evolutionChain?.url ?? "") ?? (NSURL() as URL)
             )
@@ -131,7 +131,7 @@ extension SpeciesResponse {
 
 extension EvolutionLinkResponse {
     init(from object: EvolutionLink) {
-        self.id = object.id
+        self.id = object.evoId
         self.chain = ChainLinkResponse(from: object.chain ?? ChainLink(evolvesTo: []))
     }
 }

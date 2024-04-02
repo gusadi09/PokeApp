@@ -10,11 +10,11 @@ import SwiftData
 
 @Model
 class Species {
-    var id: Int
+    var specId: Int
     var evolutionChain: SpeciesEvolutionChain?
     
-    init(id: Int, evolutionChain: SpeciesEvolutionChain? = nil) {
-        self.id = id
+    init(specId: Int, evolutionChain: SpeciesEvolutionChain? = nil) {
+        self.specId = specId
         self.evolutionChain = evolutionChain
     }
 }

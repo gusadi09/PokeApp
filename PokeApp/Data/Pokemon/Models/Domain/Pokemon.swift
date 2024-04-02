@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 final class Pokemon {
-    var id: Int
+    var pokeId: Int
     var name: String
     var height: Int
     var weight: Int
@@ -18,14 +18,14 @@ final class Pokemon {
     var types: [PokemonType]
     
     init(
-        id: Int,
+        pokeId: Int,
         name: String,
         height: Int,
         weight: Int,
         stats: [Stat],
         types: [PokemonType]
     ) {
-        self.id = id
+        self.pokeId = pokeId
         self.name = name
         self.height = height
         self.weight = weight

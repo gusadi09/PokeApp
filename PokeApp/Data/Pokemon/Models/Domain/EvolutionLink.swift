@@ -10,11 +10,11 @@ import SwiftData
 
 @Model
 class EvolutionLink {
-    var id: Int
+    var evoId: Int
     var chain: ChainLink?
     
-    init(id: Int, chain: ChainLink? = nil) {
-        self.id = id
+    init(evoId: Int, chain: ChainLink? = nil) {
+        self.evoId = evoId
         self.chain = chain
     }
 }
