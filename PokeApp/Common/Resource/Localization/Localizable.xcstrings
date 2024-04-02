@@ -5,7 +5,14 @@
 
     },
     "%@ :" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ :"
+          }
+        }
+      }
     },
     "Attention" : {
       "localizations" : {
@@ -40,24 +47,44 @@
       }
     },
     "Evolution" : {
-
-    },
-    "Fetch pokemons..." : {
-      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mendapatkan pokemon..."
+            "value" : "Evolusi"
+          }
+        }
+      }
+    },
+    "Fetching detail..." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengambil detil..."
           }
         }
       }
     },
     "Fetching pokemons..." : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengambil pokemon..."
+          }
+        }
+      }
     },
     "Height : %@m" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tinggi : %@m"
+          }
+        }
+      }
     },
     "OK" : {
       "localizations" : {
@@ -80,10 +107,14 @@
       }
     },
     "Overview" : {
-
-    },
-    "Pokemon List" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ringkasan"
+          }
+        }
+      }
     },
     "Retry" : {
       "localizations" : {
@@ -96,13 +127,34 @@
       }
     },
     "Stats" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistik"
+          }
+        }
+      }
     },
     "Type : %@" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipe : %@"
+          }
+        }
+      }
     },
     "Weight : %@Kg" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berat : %@Kg"
+          }
+        }
+      }
     },
     "You're not connect to active network, please reconnect" : {
       "localizations" : {

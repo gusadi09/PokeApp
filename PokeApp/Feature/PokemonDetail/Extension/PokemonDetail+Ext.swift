@@ -104,6 +104,50 @@ extension PokemonDetailView {
     
     @ViewBuilder
     func evolutionList() -> some View {
+        let columns = [GridItem(.flexible(minimum: 157)), GridItem(.flexible(minimum: 157))]
         
+        ScrollView {
+            LazyVGrid(columns: columns, content: {
+                ForEach(viewModel.evolutions?.list ?? []) { evoItem in
+                        PokeItemView(of: evoItem)
+                }
+            })
+            .padding()
+        }
+    }
+    
+    @ViewBuilder
+    func errorView() -> some View {
+        VStack {
+            Spacer()
+            
+            Image(systemName: "xmark.icloud")
+                .foregroundStyle(.pokePrimary)
+                .font(.system(size: 85))
+            
+            Text("Oops... something went wrong").padding()
+            
+            Button {
+                viewModel.onFetchDetail()
+            } label: {
+                HStack(spacing: 10) {
+                    Image(systemName: "arrow.clockwise")
+                    
+                    Text("Retry")
+                        .fontWeight(.semibold)
+                }
+                .padding()
+                .foregroundColor(.white)
+                .background(
+                    RoundedRectangle(
+                        cornerRadius: 20,
+                        style: .continuous
+                    )
+                    .fill(.pokePrimary)
+                )
+            }
+            
+            Spacer()
+        }
     }
 }

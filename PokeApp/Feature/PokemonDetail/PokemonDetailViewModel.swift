@@ -37,12 +37,12 @@ final class PokemonDetailViewModel: ObservableObject {
             let species = try await pokemonRepository.getSpecies(from: pokeId)
             pokemon = try await pokemonRepository.getDetails(from: pokeId)
             evolutions = try await pokemonRepository.getEvolutions(from: species.evolutionChain?.id ?? "")
+            
+            phase = .initial
         } catch {
             phase = .error(error.localizedDescription)
             isError = true
         }
-        
-        phase = .initial
     }
     
     func onFetchDetail() {

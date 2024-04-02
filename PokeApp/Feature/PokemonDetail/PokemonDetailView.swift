@@ -17,14 +17,24 @@ struct PokemonDetailView: View {
             Color.pokeLight
                 .ignoresSafeArea()
             
-            VStack {
-                Divider()
-                    .frame(height: 1)
-                    .padding(.bottom, 3)
-                
-                segmentedView()
-                
-                swipedView()
+            if viewModel.isError {
+                errorView()
+            } else if viewModel.phase == .loading {
+                ProgressView() {
+                    Text("Fetching detail...")
+                }
+                .controlSize(.large)
+                .tint(.pokePrimary)
+            } else {
+                VStack {
+                    Divider()
+                        .frame(height: 1)
+                        .padding(.bottom, 3)
+                    
+                    segmentedView()
+                    
+                    swipedView()
+                }
             }
         }
         .onAppear {
@@ -70,7 +80,7 @@ struct PokemonDetailView: View {
                 .foregroundStyle(.black)
                 .tag(DetailTabState.overview)
             
-            Text("Evolution")
+            evolutionList()
                 .foregroundStyle(.black)
                 .tag(DetailTabState.evolution)
         }
