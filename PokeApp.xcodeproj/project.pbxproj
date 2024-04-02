@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2B64D82BBC7C92000D5F83 /* PokemonMockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B64D72BBC7C92000D5F83 /* PokemonMockRemoteDataSource.swift */; };
+		EC2B64DA2BBC7D91000D5F83 /* MockDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B64D92BBC7D91000D5F83 /* MockDataHelper.swift */; };
+		EC2B64DD2BBC8D1D000D5F83 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EC2B64DC2BBC8D1D000D5F83 /* GoogleSignIn */; };
+		EC2B64DF2BBC8D40000D5F83 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EC2B64DE2BBC8D40000D5F83 /* SDWebImageSwiftUI */; };
+		EC2B64E12BBC8D63000D5F83 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EC2B64E02BBC8D63000D5F83 /* FirebaseAuth */; };
 		ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38DE2BBBCA180019C6FC /* PokeAppApp.swift */; };
 		ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38E02BBBCA180019C6FC /* LoginView.swift */; };
 		ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38E22BBBCA180019C6FC /* Pokemon.swift */; };
 		ECAC38E52BBBCA1B0019C6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAC38E42BBBCA1B0019C6FC /* Assets.xcassets */; };
 		ECAC38E92BBBCA1B0019C6FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAC38E82BBBCA1B0019C6FC /* Preview Assets.xcassets */; };
-		ECAC38F32BBBCA1B0019C6FC /* PokeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38F22BBBCA1B0019C6FC /* PokeAppTests.swift */; };
+		ECAC38F32BBBCA1B0019C6FC /* PokemonRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38F22BBBCA1B0019C6FC /* PokemonRemoteDataSourceTests.swift */; };
 		ECAC38FD2BBBCA1B0019C6FC /* PokeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38FC2BBBCA1B0019C6FC /* PokeAppUITests.swift */; };
 		ECAC38FF2BBBCA1B0019C6FC /* PokeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC38FE2BBBCA1B0019C6FC /* PokeAppUITestsLaunchTests.swift */; };
 		ECAC390F2BBBCC6D0019C6FC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ECAC390E2BBBCC6D0019C6FC /* FirebaseAuth */; };
@@ -77,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC2B64D72BBC7C92000D5F83 /* PokemonMockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMockRemoteDataSource.swift; sourceTree = "<group>"; };
+		EC2B64D92BBC7D91000D5F83 /* MockDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataHelper.swift; sourceTree = "<group>"; };
 		ECAC38DB2BBBCA180019C6FC /* PokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAC38DE2BBBCA180019C6FC /* PokeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppApp.swift; sourceTree = "<group>"; };
 		ECAC38E02BBBCA180019C6FC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -85,7 +92,7 @@
 		ECAC38E62BBBCA1B0019C6FC /* PokeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PokeApp.entitlements; sourceTree = "<group>"; };
 		ECAC38E82BBBCA1B0019C6FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECAC38EE2BBBCA1B0019C6FC /* PokeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECAC38F22BBBCA1B0019C6FC /* PokeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppTests.swift; sourceTree = "<group>"; };
+		ECAC38F22BBBCA1B0019C6FC /* PokemonRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRemoteDataSourceTests.swift; sourceTree = "<group>"; };
 		ECAC38F82BBBCA1B0019C6FC /* PokeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAC38FC2BBBCA1B0019C6FC /* PokeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppUITests.swift; sourceTree = "<group>"; };
 		ECAC38FE2BBBCA1B0019C6FC /* PokeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -153,12 +160,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2B64DF2BBC8D40000D5F83 /* SDWebImageSwiftUI in Frameworks */,
+				EC2B64E12BBC8D63000D5F83 /* FirebaseAuth in Frameworks */,
+				EC2B64DD2BBC8D1D000D5F83 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC2B64D62BBC7C6E000D5F83 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EC2B64D72BBC7C92000D5F83 /* PokemonMockRemoteDataSource.swift */,
+				EC2B64D92BBC7D91000D5F83 /* MockDataHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EC2B64DB2BBC8D1D000D5F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECAC38D22BBBCA180019C6FC = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +192,7 @@
 				ECAC38F12BBBCA1B0019C6FC /* PokeAppTests */,
 				ECAC38FB2BBBCA1B0019C6FC /* PokeAppUITests */,
 				ECAC38DC2BBBCA180019C6FC /* Products */,
+				EC2B64DB2BBC8D1D000D5F83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,7 +232,8 @@
 		ECAC38F12BBBCA1B0019C6FC /* PokeAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				ECAC38F22BBBCA1B0019C6FC /* PokeAppTests.swift */,
+				EC2B64D62BBC7C6E000D5F83 /* Helper */,
+				ECAC38F22BBBCA1B0019C6FC /* PokemonRemoteDataSourceTests.swift */,
 			);
 			path = PokeAppTests;
 			sourceTree = "<group>";
@@ -532,6 +560,11 @@
 				ECAC38FA2BBBCA1B0019C6FC /* PBXTargetDependency */,
 			);
 			name = PokeAppUITests;
+			packageProductDependencies = (
+				EC2B64DC2BBC8D1D000D5F83 /* GoogleSignIn */,
+				EC2B64DE2BBC8D40000D5F83 /* SDWebImageSwiftUI */,
+				EC2B64E02BBC8D63000D5F83 /* FirebaseAuth */,
+			);
 			productName = PokeAppUITests;
 			productReference = ECAC38F82BBBCA1B0019C6FC /* PokeAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -663,7 +696,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAC38F32BBBCA1B0019C6FC /* PokeAppTests.swift in Sources */,
+				EC2B64DA2BBC7D91000D5F83 /* MockDataHelper.swift in Sources */,
+				ECAC38F32BBBCA1B0019C6FC /* PokemonRemoteDataSourceTests.swift in Sources */,
+				EC2B64D82BBC7C92000D5F83 /* PokemonMockRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1116,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EC2B64DC2BBC8D1D000D5F83 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECAC39142BBBCDE70019C6FC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		EC2B64DE2BBC8D40000D5F83 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECAC39522BBBFE610019C6FC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		EC2B64E02BBC8D63000D5F83 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECAC390D2BBBCC6D0019C6FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		ECAC390E2BBBCC6D0019C6FC /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECAC390D2BBBCC6D0019C6FC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

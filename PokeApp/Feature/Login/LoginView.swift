@@ -33,6 +33,7 @@ struct LoginView: View {
                     viewModel.onTappedGoogleSignIn(from: vc)
                 }
                 .frame(width: 220)
+                .accessibilityIdentifier("google_button")
                 
                 Spacer()
                 
