@@ -12,7 +12,6 @@ import SwiftData
 struct LoginView: View {
     
     @StateObject var viewModel = LoginViewModel()
-    @StateObject var navigation = NavigationRoutes.shared
     
     var body: some View {
         ZStack {
@@ -30,7 +29,8 @@ struct LoginView: View {
                 Spacer()
                 
                 GoogleSignInButton {
-                    
+                    let vc = UIApplication.shared.rootViewController
+                    viewModel.onTappedGoogleSignIn(from: vc)
                 }
                 .frame(width: 220)
                 

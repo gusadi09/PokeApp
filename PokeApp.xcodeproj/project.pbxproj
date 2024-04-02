@@ -30,6 +30,7 @@
 		ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC393D2BBBDAFB0019C6FC /* Phase.swift */; };
 		ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */; };
 		ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39422BBBDFFE0019C6FC /* Route.swift */; };
+		ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		ECAC393D2BBBDAFB0019C6FC /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
 		ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
 		ECAC39422BBBDFFE0019C6FC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		ECAC39472BBBE50E0019C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 		ECAC38DD2BBBCA180019C6FC /* PokeApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39472BBBE50E0019C6FC /* Info.plist */,
 				ECAC39292BBBCF540019C6FC /* Data */,
 				ECAC39272BBBCF2A0019C6FC /* Feature */,
 				ECAC39212BBBCEC50019C6FC /* Common */,
@@ -165,6 +169,7 @@
 		ECAC39212BBBCEC50019C6FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39442BBBE4730019C6FC /* Extension */,
 				ECAC393C2BBBDAF20019C6FC /* Enum */,
 				ECAC39232BBBCED50019C6FC /* Resource */,
 				ECAC39222BBBCECA0019C6FC /* Base */,
@@ -280,6 +285,14 @@
 				ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		ECAC39442BBBE4730019C6FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +453,7 @@
 				ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */,
 				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
+				ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,13 +627,16 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PokeApp;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -654,13 +671,16 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PokeApp;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
