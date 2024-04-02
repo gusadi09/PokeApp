@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-class PokemonSpecies {
+class Species {
     var id: Int
     var evolutionChain: SpeciesEvolutionChain?
     

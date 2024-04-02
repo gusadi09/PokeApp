@@ -43,6 +43,7 @@
 		ECAC39612BBC03FD0019C6FC /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39602BBC03FD0019C6FC /* PokemonResponse.swift */; };
 		ECAC39632BBC040A0019C6FC /* EvolutionLinkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */; };
 		ECAC39652BBC04160019C6FC /* SpeciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */; };
+		ECAC39682BBC05800019C6FC /* PokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39672BBC05800019C6FC /* PokemonMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		ECAC39602BBC03FD0019C6FC /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
 		ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLinkResponse.swift; sourceTree = "<group>"; };
 		ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesResponse.swift; sourceTree = "<group>"; };
+		ECAC39672BBC05800019C6FC /* PokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 		ECAC392E2BBBCF810019C6FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39662BBC056B0019C6FC /* Mapper */,
 				ECAC395D2BBC03E10019C6FC /* Network */,
 				ECAC392F2BBBCF870019C6FC /* Domain */,
 			);
@@ -352,6 +355,14 @@
 				ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		ECAC39662BBC056B0019C6FC /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39672BBC05800019C6FC /* PokemonMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,6 +522,7 @@
 				ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */,
 				ECAC39582BBC02AD0019C6FC /* NameWrapper.swift in Sources */,
 				ECAC39652BBC04160019C6FC /* SpeciesResponse.swift in Sources */,
+				ECAC39682BBC05800019C6FC /* PokemonMapper.swift in Sources */,
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
 				ECAC395C2BBC03760019C6FC /* Species.swift in Sources */,
 				ECAC39632BBC040A0019C6FC /* EvolutionLinkResponse.swift in Sources */,
