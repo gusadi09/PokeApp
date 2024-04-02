@@ -26,6 +26,11 @@
 		ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC392B2BBBCF6F0019C6FC /* PersistentManager.swift */; };
 		ECAC39362BBBD4310019C6FC /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = ECAC39352BBBD4310019C6FC /* Mocker */; };
 		ECAC39392BBBD4D20019C6FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */; };
+		ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC393A2BBBDA800019C6FC /* LoginViewModel.swift */; };
+		ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC393D2BBBDAFB0019C6FC /* Phase.swift */; };
+		ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */; };
+		ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39422BBBDFFE0019C6FC /* Route.swift */; };
+		ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,12 @@
 		ECAC39252BBBCEFC0019C6FC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		ECAC392B2BBBCF6F0019C6FC /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
 		ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ECAC393A2BBBDA800019C6FC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ECAC393D2BBBDAFB0019C6FC /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
+		ECAC39422BBBDFFE0019C6FC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		ECAC39472BBBE50E0019C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +130,7 @@
 		ECAC38DD2BBBCA180019C6FC /* PokeApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39472BBBE50E0019C6FC /* Info.plist */,
 				ECAC39292BBBCF540019C6FC /* Data */,
 				ECAC39272BBBCF2A0019C6FC /* Feature */,
 				ECAC39212BBBCEC50019C6FC /* Common */,
@@ -157,6 +169,8 @@
 		ECAC39212BBBCEC50019C6FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39442BBBE4730019C6FC /* Extension */,
+				ECAC393C2BBBDAF20019C6FC /* Enum */,
 				ECAC39232BBBCED50019C6FC /* Resource */,
 				ECAC39222BBBCECA0019C6FC /* Base */,
 			);
@@ -166,6 +180,7 @@
 		ECAC39222BBBCECA0019C6FC /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC393F2BBBDFD60019C6FC /* Navigation */,
 				ECAC38DE2BBBCA180019C6FC /* PokeAppApp.swift */,
 			);
 			path = Base;
@@ -201,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				ECAC38E02BBBCA180019C6FC /* LoginView.swift */,
+				ECAC393A2BBBDA800019C6FC /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -252,6 +268,31 @@
 				ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		ECAC393C2BBBDAF20019C6FC /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC393D2BBBDAFB0019C6FC /* Phase.swift */,
+				ECAC39422BBBDFFE0019C6FC /* Route.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		ECAC393F2BBBDFD60019C6FC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		ECAC39442BBBE4730019C6FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,9 +447,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
+				ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */,
 				ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */,
 				ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */,
+				ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */,
+				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
+				ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */,
+				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +496,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -479,6 +526,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -513,6 +561,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -542,6 +591,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -571,18 +621,22 @@
 				CODE_SIGN_ENTITLEMENTS = PokeApp/PokeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M5M727687;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PokeApp;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -611,18 +665,22 @@
 				CODE_SIGN_ENTITLEMENTS = PokeApp/PokeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6M5M727687;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PokeApp;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -650,6 +708,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -673,6 +732,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -695,6 +755,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -717,6 +778,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

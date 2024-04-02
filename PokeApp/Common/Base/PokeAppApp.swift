@@ -26,9 +26,23 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct PokeAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject var navigation = NavigationRoutes.shared
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            NavigationStack(path: $navigation.path) {
+                LoginView()
+                    .navigationDestination(for: Route.self) { route in
+                        switch route {
+                        case .home:
+                            Text("HOME")
+                        case .detail:
+                            Text("Detail")
+                        default:
+                            EmptyView()
+                        }
+                    }
+            }
         }
     }
 }

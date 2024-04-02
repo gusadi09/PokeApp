@@ -1,8 +1,42 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Hello, world" : {
+    "Attention" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perhatian"
+          }
+        }
+      }
+    },
+    "Can't find your account" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak dapat menemukan akun kamu"
+          }
+        }
+      }
+    },
+    "Detail" : {
 
+    },
+    "HOME" : {
+
+    },
+    "OK" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
