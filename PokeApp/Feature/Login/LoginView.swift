@@ -10,6 +10,8 @@ import SwiftUI
 import SwiftData
 
 struct LoginView: View {
+    
+    @StateObject var viewModel = LoginViewModel()
 
     var body: some View {
         ZStack {
@@ -36,6 +38,11 @@ struct LoginView: View {
                 Spacer()
             }
             .padding()
+        }
+        .alert("Attention", isPresented: $viewModel.isError) {
+            Button("OK") { }
+        } message: {
+            Text(viewModel.phase.errorString)
         }
     }
 }

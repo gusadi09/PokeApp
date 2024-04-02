@@ -7,7 +7,8 @@
 
 import Foundation
 
-@Observable
-class LoginViewModel {
-    
+class LoginViewModel: ObservableObject {
+    @Published var phase: Phase = .initial
+    @Published var isAlreadyLogin = false
+    @Published var isError = false
 }

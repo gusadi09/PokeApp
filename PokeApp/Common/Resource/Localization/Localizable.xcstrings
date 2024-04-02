@@ -1,7 +1,26 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-
+    "Attention" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perhatian"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    }
   },
   "version" : "1.0"
 }
