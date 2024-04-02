@@ -10,7 +10,7 @@ import SwiftData
 
 final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
-    let persistent: PersistentManager
+    private let persistent: PersistentManager
     
     init(persistent: PersistentManager = PersistentManager.shared) {
         self.persistent = persistent

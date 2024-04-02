@@ -50,6 +50,8 @@
 		ECAC39712BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39702BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift */; };
 		ECAC39742BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39732BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift */; };
 		ECAC39772BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39762BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift */; };
+		ECAC39792BBC144C0019C6FC /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39782BBC144C0019C6FC /* PokemonRepository.swift */; };
+		ECAC397B2BBC145C0019C6FC /* PokemonDefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC397A2BBC145C0019C6FC /* PokemonDefaultRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		ECAC39702BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRemoteDataSource.swift; sourceTree = "<group>"; };
 		ECAC39732BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDefaultLocalDataSource.swift; sourceTree = "<group>"; };
 		ECAC39762BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
+		ECAC39782BBC144C0019C6FC /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
+		ECAC397A2BBC145C0019C6FC /* PokemonDefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDefaultRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,8 @@
 			children = (
 				ECAC396D2BBC0A860019C6FC /* DataSource */,
 				ECAC392E2BBBCF810019C6FC /* Models */,
+				ECAC39782BBC144C0019C6FC /* PokemonRepository.swift */,
+				ECAC397A2BBC145C0019C6FC /* PokemonDefaultRepository.swift */,
 			);
 			path = Pokemon;
 			sourceTree = "<group>";
@@ -575,10 +581,12 @@
 				ECAC396C2BBC0A4F0019C6FC /* Array+Ext.swift in Sources */,
 				ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */,
 				ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */,
+				ECAC39792BBC144C0019C6FC /* PokemonRepository.swift in Sources */,
 				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
 				ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */,
 				ECAC395F2BBC03F40019C6FC /* NameWrapperResponse.swift in Sources */,
+				ECAC397B2BBC145C0019C6FC /* PokemonDefaultRepository.swift in Sources */,
 				ECAC39512BBBFC8F0019C6FC /* ContainerView.swift in Sources */,
 				ECAC39612BBC03FD0019C6FC /* PokemonResponse.swift in Sources */,
 				ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */,
