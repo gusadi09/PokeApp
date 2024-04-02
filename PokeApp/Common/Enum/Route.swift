@@ -7,8 +7,7 @@
 
 import Foundation
 
-enum Route {
-    case login
-    case home
-    case detail
+enum Route: String {
+    case login = "login"
+    case home = "home"
 }

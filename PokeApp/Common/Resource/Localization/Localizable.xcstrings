@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "" : {
-
-    },
     "Attention" : {
       "localizations" : {
         "id" : {
@@ -26,7 +23,28 @@
       }
     },
     "Detail" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detail"
+          }
+        }
+      }
+    },
+    "Detail of %@" : {
 
+    },
+    "Getting pokemons..." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mendapatkan pokemon..."
+          }
+        }
+      }
     },
     "OK" : {
       "localizations" : {
@@ -34,6 +52,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        }
+      }
+    },
+    "Oops... something went wrong" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ups... ada sesuatu yang salah"
+          }
+        }
+      }
+    },
+    "POKEMON FOR %@" : {
+
+    },
+    "Retry" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulangi"
           }
         }
       }

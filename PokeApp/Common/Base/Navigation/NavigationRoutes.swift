@@ -10,7 +10,5 @@ import Foundation
 final class NavigationRoutes: ObservableObject {
     static let shared = NavigationRoutes()
     
-    let routes: [Route] = [.login, .home, .detail]
-    
-    @Published var path = [Route]()
+    @Published var path = [String]()
 }

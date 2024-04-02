@@ -32,14 +32,12 @@ struct PokeAppApp: App {
         WindowGroup {
             NavigationStack(path: $navigation.path) {
                 LoginView()
-                    .navigationDestination(for: Route.self) { route in
+                    .navigationDestination(for: String.self) { route in
                         switch route {
-                        case .home:
+                        case Route.home.rawValue:
                             PokemonListView()
-                        case .detail:
-                            Text("Detail")
                         default:
-                            EmptyView()
+                            Text("POKEMON FOR \(route)")
                         }
                     }
             }
