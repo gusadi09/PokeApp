@@ -25,6 +25,7 @@
 		ECAC39262BBBCEFC0019C6FC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ECAC39252BBBCEFC0019C6FC /* Localizable.xcstrings */; };
 		ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC392B2BBBCF6F0019C6FC /* PersistentManager.swift */; };
 		ECAC39362BBBD4310019C6FC /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = ECAC39352BBBD4310019C6FC /* Mocker */; };
+		ECAC39392BBBD4D20019C6FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		ECAC39122BBBCD8F0019C6FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECAC39252BBBCEFC0019C6FC /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		ECAC392B2BBBCF6F0019C6FC /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
+		ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		ECAC39272BBBCF2A0019C6FC /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39372BBBD4C60019C6FC /* Splash */,
 				ECAC39282BBBCF300019C6FC /* Login */,
 			);
 			path = Feature;
@@ -241,6 +244,14 @@
 				ECAC38E22BBBCA180019C6FC /* Pokemon.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		ECAC39372BBBD4C60019C6FC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 				ECAC38E92BBBCA1B0019C6FC /* Preview Assets.xcassets in Resources */,
 				ECAC38E52BBBCA1B0019C6FC /* Assets.xcassets in Resources */,
 				ECAC39262BBBCEFC0019C6FC /* Localizable.xcstrings in Resources */,
+				ECAC39392BBBD4D20019C6FC /* Launch Screen.storyboard in Resources */,
 				ECAC39132BBBCD8F0019C6FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +497,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -540,6 +554,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
