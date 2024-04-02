@@ -173,11 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				ECAC394D2BBBFC1B0019C6FC /* Component */,
-				ECAC39472BBBE50E0019C6FC /* Info.plist */,
 				ECAC39292BBBCF540019C6FC /* Data */,
 				ECAC39272BBBCF2A0019C6FC /* Feature */,
 				ECAC39212BBBCEC50019C6FC /* Common */,
 				ECAC38E62BBBCA1B0019C6FC /* PokeApp.entitlements */,
+				ECAC39472BBBE50E0019C6FC /* Info.plist */,
 				ECAC39122BBBCD8F0019C6FC /* GoogleService-Info.plist */,
 				ECAC38E72BBBCA1B0019C6FC /* Preview Content */,
 			);
