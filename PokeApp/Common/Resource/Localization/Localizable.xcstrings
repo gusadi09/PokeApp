@@ -23,10 +23,28 @@
       }
     },
     "Detail" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detail"
+          }
+        }
+      }
+    },
+    "Detail of %@" : {
 
     },
-    "HOME" : {
-
+    "Getting pokemons..." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mendapatkan pokemon..."
+          }
+        }
+      }
     },
     "OK" : {
       "localizations" : {
@@ -37,6 +55,32 @@
           }
         }
       }
+    },
+    "Oops... something went wrong" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ups... ada sesuatu yang salah"
+          }
+        }
+      }
+    },
+    "POKEMON FOR %@" : {
+
+    },
+    "Retry" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulangi"
+          }
+        }
+      }
+    },
+    "You're not connect to active network, please reconnect" : {
+
     }
   },
   "version" : "1.0"

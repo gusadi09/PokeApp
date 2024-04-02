@@ -11,10 +11,9 @@ import SwiftData
 class PersistentManager {
     static let shared = PersistentManager()
     
-    var modelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+    func modelContainer<Model: PersistentModel>(from schema: [Model.Type]) -> ModelContainer {
+        let schema = Schema(schema)
+        
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         
         do {
@@ -22,5 +21,5 @@ class PersistentManager {
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
-    }()
+    }
 }

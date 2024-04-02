@@ -10,7 +10,7 @@ import Foundation
 import GoogleSignIn
 import UIKit
 
-class LoginViewModel: ObservableObject {
+final class LoginViewModel: ObservableObject {
     @Published var phase: Phase = .initial
     @Published var isAlreadyLogin = false
     @Published var isError = false
@@ -44,7 +44,7 @@ class LoginViewModel: ObservableObject {
                     self?.phase = .error("Can't find your account")
                     return
                 }
-                self?.navigation.path.append(.home)
+                self?.navigation.path.append(Route.home.rawValue)
                 self?.isAlreadyLogin = true
             }
         }

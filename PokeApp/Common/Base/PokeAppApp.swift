@@ -27,21 +27,32 @@ struct PokeAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     @StateObject var navigation = NavigationRoutes.shared
+    @StateObject var reachability = ReachabilityManager.shared
+    @State var showNoConnection = false
     
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $navigation.path) {
                 LoginView()
-                    .navigationDestination(for: Route.self) { route in
+                    .navigationDestination(for: String.self) { route in
                         switch route {
-                        case .home:
-                            Text("HOME")
-                        case .detail:
-                            Text("Detail")
+                        case Route.home.rawValue:
+                            PokemonListView()
                         default:
-                            EmptyView()
+                            Text("POKEMON FOR \(route)")
                         }
                     }
+            }
+            .onAppear(perform: {
+                reachability.startNetworkMonitoring()
+            })
+            .onReceive(reachability.isNotConnected, perform: { val in
+                showNoConnection = val
+            })
+            .alert("Attention", isPresented: $showNoConnection) {
+                Button("OK") { }
+            } message: {
+                Text("You're not connect to active network, please reconnect")
             }
         }
     }
