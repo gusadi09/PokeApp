@@ -28,6 +28,8 @@
 		ECAC39392BBBD4D20019C6FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */; };
 		ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC393A2BBBDA800019C6FC /* LoginViewModel.swift */; };
 		ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC393D2BBBDAFB0019C6FC /* Phase.swift */; };
+		ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */; };
+		ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39422BBBDFFE0019C6FC /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		ECAC39382BBBD4D20019C6FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ECAC393A2BBBDA800019C6FC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ECAC393D2BBBDAFB0019C6FC /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
+		ECAC39422BBBDFFE0019C6FC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 		ECAC39222BBBCECA0019C6FC /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC393F2BBBDFD60019C6FC /* Navigation */,
 				ECAC38DE2BBBCA180019C6FC /* PokeAppApp.swift */,
 			);
 			path = Base;
@@ -264,8 +269,17 @@
 			isa = PBXGroup;
 			children = (
 				ECAC393D2BBBDAFB0019C6FC /* Phase.swift */,
+				ECAC39422BBBDFFE0019C6FC /* Route.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		ECAC393F2BBBDFD60019C6FC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,8 +434,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
+				ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */,
 				ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */,
 				ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */,
+				ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */,
 				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,

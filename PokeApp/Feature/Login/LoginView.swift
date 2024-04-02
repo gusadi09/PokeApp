@@ -12,7 +12,8 @@ import SwiftData
 struct LoginView: View {
     
     @StateObject var viewModel = LoginViewModel()
-
+    @StateObject var navigation = NavigationRoutes.shared
+    
     var body: some View {
         ZStack {
             Color.pokePrimary
