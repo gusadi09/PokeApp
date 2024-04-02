@@ -1,32 +1,26 @@
 //
-//  PokeAppApp.swift
+//  PersistentManager.swift
 //  PokeApp
 //
 //  Created by Gus Adi on 02/04/24.
 //
 
-import SwiftUI
+import Foundation
 import SwiftData
 
-@main
-struct PokeAppApp: App {
-    var sharedModelContainer: ModelContainer = {
+class PersistentManager {
+    static let shared = PersistentManager()
+    
+    var modelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
 }
