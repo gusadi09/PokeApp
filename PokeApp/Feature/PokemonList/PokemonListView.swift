@@ -41,7 +41,7 @@ struct PokemonListView: View {
             if viewModel.pokemons.isEmpty {
                 if viewModel.phase == .loading {
                     ProgressView() {
-                        Text("Getting pokemons...")
+                        Text("Fetching pokemons...")
                     }.controlSize(.large)
                 } else if viewModel.isError && viewModel.phase != .loading {
                     errorView()
@@ -49,9 +49,6 @@ struct PokemonListView: View {
             }
         }
         .navigationBarBackButtonHidden()
-        .navigationDestination(for: String.self) { poke in
-            Text("Detail of \(poke)")
-        }
     }
     
     @ViewBuilder

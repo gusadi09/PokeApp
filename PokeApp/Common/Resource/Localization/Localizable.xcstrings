@@ -1,6 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "%@ :" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ :"
+          }
+        }
+      }
+    },
     "Attention" : {
       "localizations" : {
         "id" : {
@@ -28,20 +41,47 @@
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Detail"
+            "value" : "Detil"
           }
         }
       }
     },
-    "Detail of %@" : {
-
-    },
-    "Getting pokemons..." : {
+    "Evolution" : {
       "localizations" : {
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mendapatkan pokemon..."
+            "value" : "Evolusi"
+          }
+        }
+      }
+    },
+    "Fetching detail..." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengambil detil..."
+          }
+        }
+      }
+    },
+    "Fetching pokemons..." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengambil pokemon..."
+          }
+        }
+      }
+    },
+    "Height : %@m" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tinggi : %@m"
           }
         }
       }
@@ -66,8 +106,15 @@
         }
       }
     },
-    "POKEMON FOR %@" : {
-
+    "Overview" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ringkasan"
+          }
+        }
+      }
     },
     "Retry" : {
       "localizations" : {
@@ -79,8 +126,45 @@
         }
       }
     },
+    "Stats" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistik"
+          }
+        }
+      }
+    },
+    "Type : %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipe : %@"
+          }
+        }
+      }
+    },
+    "Weight : %@Kg" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berat : %@Kg"
+          }
+        }
+      }
+    },
     "You're not connect to active network, please reconnect" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamu tidak sedang tersambung ke jaringan aktif, silahkan koneksikan ulang"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

@@ -20,11 +20,11 @@ final class PokemonDefaultRepository: PokemonRepository {
         self.localDataSource = localDataSource
     }
     
-    func getPokemons(page: Int = 0) async throws -> [NameWrapperResponse] {
+    func getPokemons(on page: Int = 0) async throws -> [NameWrapperResponse] {
         try await remoteDataSource.getPokemons(on: page)
     }
     
-    func getDetails(id: String) async throws -> PokemonResponse {
+    func getDetails(from id: String) async throws -> PokemonResponse {
         if let pokemon = localDataSource.getDetailPokemon(from: id) {
             return pokemon
         } else {
@@ -34,7 +34,7 @@ final class PokemonDefaultRepository: PokemonRepository {
         }
     }
     
-    func getSpecies(id: String) async throws -> SpeciesResponse {
+    func getSpecies(from id: String) async throws -> SpeciesResponse {
         if let species = localDataSource.getSpecies(from: id) {
             return species
         } else {
@@ -44,7 +44,7 @@ final class PokemonDefaultRepository: PokemonRepository {
         }
     }
     
-    func getEvolutions(evolutionId: String) async throws -> EvolutionLinkResponse {
+    func getEvolutions(from evolutionId: String) async throws -> EvolutionLinkResponse {
         if let evolutions = localDataSource.getEvolutions(from: evolutionId) {
             return evolutions
         } else {

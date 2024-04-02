@@ -12,15 +12,15 @@ final class PokemonDefaultRemoteDataSource: PokemonRemoteDataSource {
     
     private let baseUrl = "https://pokeapi.co/api/v2"
     
-    private let sessionManager: Session
+    private let session: Session
     
-    init(sessionManager: Session = Session()) {
-        self.sessionManager = sessionManager
+    init(session: Session = Session()) {
+        self.session = session
     }
     
     func getPokemons(on page: Int) async throws -> [NameWrapperResponse] {
-        let result = await sessionManager
-            .request("\(baseUrl)/pokemon?offset=\(page * 20)")
+        let result = await session
+            .request("\(baseUrl)/pokemon?offset=\((page / 20) * 20)")
             .serializingDecodable(
                 ListResponse<NameWrapperResponse>.self,
                 decoder: JSONDecoder.decoder(with: .convertFromSnakeCase)
@@ -35,7 +35,7 @@ final class PokemonDefaultRemoteDataSource: PokemonRemoteDataSource {
     }
     
     func getDetail(from id: String) async throws -> PokemonResponse {
-        let result = await sessionManager
+        let result = await session
             .request("\(baseUrl)/pokemon/\(id)")
             .serializingDecodable(
                 PokemonResponse.self,
@@ -51,7 +51,7 @@ final class PokemonDefaultRemoteDataSource: PokemonRemoteDataSource {
     }
     
     func getSpecies(from id: String) async throws -> SpeciesResponse {
-        let result = await sessionManager
+        let result = await session
             .request("\(baseUrl)/pokemon-species/\(id)")
             .serializingDecodable(
                 SpeciesResponse.self,
@@ -67,7 +67,7 @@ final class PokemonDefaultRemoteDataSource: PokemonRemoteDataSource {
     }
     
     func getEvolutions(with evoId: String) async throws -> EvolutionLinkResponse {
-        let result = await sessionManager
+        let result = await session
             .request("\(baseUrl)/evolution-chain/\(evoId)")
             .serializingDecodable(
                 EvolutionLinkResponse.self,

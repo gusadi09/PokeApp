@@ -18,13 +18,13 @@ final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
     @MainActor
     func getDetailPokemon(from id: String) -> PokemonResponse? {
-        let modelContext = persistent.modelContainer(from: [Pokemon.self]).mainContext
-        
         do {
-            let items = try modelContext.fetch(FetchDescriptor<Pokemon>())
-            return PokemonResponse(from: items.first {
+            let items = try persistent.modelContainer.mainContext.fetch(FetchDescriptor<Pokemon>())
+            guard let pokemon = items.first(where: {
                 $0.pokeId == Int(id)
-            } ?? Pokemon(pokeId: 0, name: "", height: 0, weight: 0, stats: [], types: []))
+            }) else { return nil }
+            
+            return PokemonResponse(from: pokemon)
             
         } catch {
             fatalError(error.localizedDescription)
@@ -33,12 +33,11 @@ final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
     @MainActor
     func saveDetail(_ pokemon: PokemonResponse) {
-        let modelContext = persistent.modelContainer(from: [Pokemon.self]).mainContext
         
-        modelContext.insert(Pokemon(from: pokemon))
+        persistent.modelContainer.mainContext.insert(Pokemon(from: pokemon))
         
         do {
-            try modelContext.save()
+            try persistent.modelContainer.mainContext.save()
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -46,13 +45,14 @@ final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
     @MainActor
     func getSpecies(from id: String) -> SpeciesResponse? {
-        let modelContext = persistent.modelContainer(from: [Species.self]).mainContext
         
         do {
-            let items = try modelContext.fetch(FetchDescriptor<Species>())
-            return SpeciesResponse(from: items.first {
+            let items = try persistent.modelContainer.mainContext.fetch(FetchDescriptor<Species>())
+            guard let species = items.first(where: {
                 $0.specId == Int(id)
-            } ?? Species(specId: 0))
+            }) else { return nil }
+            
+            return SpeciesResponse(from: species)
             
         } catch {
             fatalError(error.localizedDescription)
@@ -61,12 +61,11 @@ final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
     @MainActor
     func saveSpecies(_ species: SpeciesResponse) {
-        let modelContext = persistent.modelContainer(from: [Species.self]).mainContext
         
-        modelContext.insert(Species(from: species))
+        persistent.modelContainer.mainContext.insert(Species(from: species))
         
         do {
-            try modelContext.save()
+            try persistent.modelContainer.mainContext.save()
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -74,13 +73,15 @@ final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
     @MainActor
     func getEvolutions(from evoId: String) -> EvolutionLinkResponse? {
-        let modelContext = persistent.modelContainer(from: [EvolutionLink.self]).mainContext
         
         do {
-            let items = try modelContext.fetch(FetchDescriptor<EvolutionLink>())
-            return EvolutionLinkResponse(from: items.first {
+            let items = try persistent.modelContainer.mainContext.fetch(FetchDescriptor<EvolutionLink>())
+            
+            guard let evo = items.first(where: {
                 $0.evoId == Int(evoId)
-            } ?? EvolutionLink(evoId: 0, chain: nil))
+            }) else { return nil }
+                    
+            return EvolutionLinkResponse(from: evo)
             
         } catch {
             fatalError(error.localizedDescription)
@@ -89,12 +90,10 @@ final class PokemonDefaultLocalDataSource: PokemonLocalDataSource {
     
     @MainActor 
     func saveEvolutions(_ link: EvolutionLinkResponse) {
-        let modelContext = persistent.modelContainer(from: [EvolutionLink.self]).mainContext
-        
-        modelContext.insert(EvolutionLink(from: link))
+        persistent.modelContainer.mainContext.insert(EvolutionLink(from: link))
         
         do {
-            try modelContext.save()
+            try persistent.modelContainer.mainContext.save()
         } catch {
             fatalError(error.localizedDescription)
         }
