@@ -9,20 +9,16 @@ import SwiftUI
 
 struct PokemonDetailView: View {
     
-    @StateObject var viewModel = PokemonDetailViewModel()
-    let id: String
-    
-    init(
-        id: String
-    ) {
-        self.id = id
-    }
+    @StateObject var viewModel: PokemonDetailViewModel
     
     var body: some View {
         Text("Hello, World!")
+            .onAppear {
+                viewModel.onFetchDetail()
+            }
     }
 }
 
 #Preview {
-    PokemonDetailView(id: "0")
+    PokemonDetailView(viewModel: PokemonDetailViewModel(for: "0"))
 }

@@ -24,10 +24,11 @@ final class PokemonListViewModel: ObservableObject {
         isError = false
         
         do {
-            pokemons.appendWithoutDuplicate(try await pokemonRepository.getPokemons(page: pokemons.count / 20))
+            pokemons.appendWithoutDuplicate(try await pokemonRepository.getPokemons(on: pokemons.count / 20))
             
             phase = .initial
         } catch {
+            phase = .error(error.localizedDescription)
             isError = true
         }
     }

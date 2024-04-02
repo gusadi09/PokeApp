@@ -49,9 +49,6 @@ struct PokemonListView: View {
             }
         }
         .navigationBarBackButtonHidden()
-        .navigationDestination(for: String.self) { poke in
-            Text("Detail of \(poke)")
-        }
     }
     
     @ViewBuilder

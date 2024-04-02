@@ -39,7 +39,7 @@ struct PokeAppApp: App {
                         case Route.home.rawValue:
                             PokemonListView()
                         default:
-                            PokemonDetailView(id: route)
+                            PokemonDetailView(viewModel: PokemonDetailViewModel(for: route))
                         }
                     }
             }

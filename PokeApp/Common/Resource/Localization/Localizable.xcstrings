@@ -28,13 +28,10 @@
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Detail"
+            "value" : "Detil"
           }
         }
       }
-    },
-    "Detail of %@" : {
-
     },
     "Getting pokemons..." : {
       "localizations" : {
@@ -45,6 +42,9 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
     },
     "OK" : {
       "localizations" : {
@@ -66,9 +66,6 @@
         }
       }
     },
-    "POKEMON FOR %@" : {
-
-    },
     "Retry" : {
       "localizations" : {
         "id" : {
@@ -80,7 +77,14 @@
       }
     },
     "You're not connect to active network, please reconnect" : {
-
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamu tidak sedang tersambung ke jaringan aktif, silahkan koneksikan ulang"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
