@@ -36,6 +36,9 @@
 		ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC394E2BBBFC2E0019C6FC /* PokeItemView.swift */; };
 		ECAC39512BBBFC8F0019C6FC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39502BBBFC8F0019C6FC /* ContainerView.swift */; };
 		ECAC39542BBBFE620019C6FC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ECAC39532BBBFE620019C6FC /* SDWebImageSwiftUI */; };
+		ECAC39582BBC02AD0019C6FC /* NameWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */; };
+		ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39592BBC03240019C6FC /* EvolutionLink.swift */; };
+		ECAC395C2BBC03760019C6FC /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC395B2BBC03760019C6FC /* Species.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		ECAC394B2BBBF28B0019C6FC /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
 		ECAC394E2BBBFC2E0019C6FC /* PokeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItemView.swift; sourceTree = "<group>"; };
 		ECAC39502BBBFC8F0019C6FC /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameWrapper.swift; sourceTree = "<group>"; };
+		ECAC39592BBC03240019C6FC /* EvolutionLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLink.swift; sourceTree = "<group>"; };
+		ECAC395B2BBC03760019C6FC /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				ECAC38E22BBBCA180019C6FC /* Pokemon.swift */,
+				ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */,
+				ECAC39592BBC03240019C6FC /* EvolutionLink.swift */,
+				ECAC395B2BBC03760019C6FC /* Species.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -480,7 +489,9 @@
 			files = (
 				ECAC394C2BBBF28B0019C6FC /* PokemonListView.swift in Sources */,
 				ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */,
+				ECAC39582BBC02AD0019C6FC /* NameWrapper.swift in Sources */,
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
+				ECAC395C2BBC03760019C6FC /* Species.swift in Sources */,
 				ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */,
 				ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */,
 				ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */,
@@ -489,6 +500,7 @@
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
 				ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */,
 				ECAC39512BBBFC8F0019C6FC /* ContainerView.swift in Sources */,
+				ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */,
 				ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,
 			);
