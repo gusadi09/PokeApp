@@ -13,7 +13,9 @@ class PersistentManager {
     
     var modelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Pokemon.self,
+            Species.self,
+            EvolutionLink.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         

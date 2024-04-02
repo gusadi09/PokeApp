@@ -26,9 +26,34 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct PokeAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject var navigation = NavigationRoutes.shared
+    @StateObject var reachability = ReachabilityManager.shared
+    @State var showNoConnection = false
+    
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            NavigationStack(path: $navigation.path) {
+                LoginView()
+                    .navigationDestination(for: String.self) { route in
+                        switch route {
+                        case Route.home.rawValue:
+                            PokemonListView()
+                        default:
+                            PokemonDetailView(viewModel: PokemonDetailViewModel(for: route))
+                        }
+                    }
+            }
+            .onAppear(perform: {
+                reachability.startNetworkMonitoring()
+            })
+            .onReceive(reachability.isNotConnected, perform: { val in
+                showNoConnection = val
+            })
+            .alert("Attention", isPresented: $showNoConnection) {
+                Button("OK") { }
+            } message: {
+                Text("You're not connect to active network, please reconnect")
+            }
         }
     }
 }
