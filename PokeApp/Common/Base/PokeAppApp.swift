@@ -27,6 +27,8 @@ struct PokeAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     @StateObject var navigation = NavigationRoutes.shared
+    @StateObject var reachability = ReachabilityManager.shared
+    @State var showNoConnection = false
     
     var body: some Scene {
         WindowGroup {
@@ -40,6 +42,17 @@ struct PokeAppApp: App {
                             Text("POKEMON FOR \(route)")
                         }
                     }
+            }
+            .onAppear(perform: {
+                reachability.startNetworkMonitoring()
+            })
+            .onReceive(reachability.isNotConnected, perform: { val in
+                showNoConnection = val
+            })
+            .alert("Attention", isPresented: $showNoConnection) {
+                Button("OK") { }
+            } message: {
+                Text("You're not connect to active network, please reconnect")
             }
         }
     }

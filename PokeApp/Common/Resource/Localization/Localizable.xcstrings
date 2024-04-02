@@ -78,6 +78,9 @@
           }
         }
       }
+    },
+    "You're not connect to active network, please reconnect" : {
+
     }
   },
   "version" : "1.0"

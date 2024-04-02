@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonListView: View {
     
-    @ObservedObject var viewModel = PokemonListViewModel()
+    @StateObject var viewModel = PokemonListViewModel()
     
     private let columns = [GridItem(.flexible(minimum: 157)), GridItem(.flexible(minimum: 157))]
     
