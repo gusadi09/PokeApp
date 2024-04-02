@@ -44,6 +44,8 @@
 		ECAC39632BBC040A0019C6FC /* EvolutionLinkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */; };
 		ECAC39652BBC04160019C6FC /* SpeciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */; };
 		ECAC39682BBC05800019C6FC /* PokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39672BBC05800019C6FC /* PokemonMapper.swift */; };
+		ECAC396A2BBC0A090019C6FC /* JSONDecoder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39692BBC0A090019C6FC /* JSONDecoder+Ext.swift */; };
+		ECAC396C2BBC0A4F0019C6FC /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC396B2BBC0A4F0019C6FC /* Array+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLinkResponse.swift; sourceTree = "<group>"; };
 		ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesResponse.swift; sourceTree = "<group>"; };
 		ECAC39672BBC05800019C6FC /* PokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMapper.swift; sourceTree = "<group>"; };
+		ECAC39692BBC0A090019C6FC /* JSONDecoder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Ext.swift"; sourceTree = "<group>"; };
+		ECAC396B2BBC0A4F0019C6FC /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */,
+				ECAC39692BBC0A090019C6FC /* JSONDecoder+Ext.swift */,
+				ECAC396B2BBC0A4F0019C6FC /* Array+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -528,6 +534,7 @@
 				ECAC39632BBC040A0019C6FC /* EvolutionLinkResponse.swift in Sources */,
 				ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */,
 				ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */,
+				ECAC396C2BBC0A4F0019C6FC /* Array+Ext.swift in Sources */,
 				ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */,
 				ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */,
 				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
@@ -538,6 +545,7 @@
 				ECAC39612BBC03FD0019C6FC /* PokemonResponse.swift in Sources */,
 				ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */,
 				ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */,
+				ECAC396A2BBC0A090019C6FC /* JSONDecoder+Ext.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
