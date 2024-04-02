@@ -31,6 +31,8 @@
 		ECAC39412BBBDFE30019C6FC /* NavigationRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39402BBBDFE30019C6FC /* NavigationRoutes.swift */; };
 		ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39422BBBDFFE0019C6FC /* Route.swift */; };
 		ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */; };
+		ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39492BBBF2790019C6FC /* PokemonListViewModel.swift */; };
+		ECAC394C2BBBF28B0019C6FC /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC394B2BBBF28B0019C6FC /* PokemonListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		ECAC39422BBBDFFE0019C6FC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
 		ECAC39472BBBE50E0019C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECAC39492BBBF2790019C6FC /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
+		ECAC394B2BBBF28B0019C6FC /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 		ECAC39272BBBCF2A0019C6FC /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39482BBBF24E0019C6FC /* PokemonList */,
 				ECAC39372BBBD4C60019C6FC /* Splash */,
 				ECAC39282BBBCF300019C6FC /* Login */,
 			);
@@ -293,6 +298,15 @@
 				ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		ECAC39482BBBF24E0019C6FC /* PokemonList */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39492BBBF2790019C6FC /* PokemonListViewModel.swift */,
+				ECAC394B2BBBF28B0019C6FC /* PokemonListView.swift */,
+			);
+			path = PokemonList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +460,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAC394C2BBBF28B0019C6FC /* PokemonListView.swift in Sources */,
+				ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */,
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
 				ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */,
 				ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */,

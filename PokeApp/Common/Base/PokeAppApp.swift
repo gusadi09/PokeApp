@@ -35,7 +35,7 @@ struct PokeAppApp: App {
                     .navigationDestination(for: Route.self) { route in
                         switch route {
                         case .home:
-                            Text("HOME")
+                            PokemonListView()
                         case .detail:
                             Text("Detail")
                         default:

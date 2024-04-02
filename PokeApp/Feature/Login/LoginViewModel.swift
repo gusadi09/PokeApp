@@ -10,7 +10,7 @@ import Foundation
 import GoogleSignIn
 import UIKit
 
-class LoginViewModel: ObservableObject {
+final class LoginViewModel: ObservableObject {
     @Published var phase: Phase = .initial
     @Published var isAlreadyLogin = false
     @Published var isError = false
