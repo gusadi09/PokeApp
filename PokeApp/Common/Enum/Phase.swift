@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Phase {
+enum Phase: Equatable {
     case initial
     case loading
     case error(String)

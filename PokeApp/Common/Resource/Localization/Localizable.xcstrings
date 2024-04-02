@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "Attention" : {
       "localizations" : {
         "id" : {
@@ -23,9 +26,6 @@
       }
     },
     "Detail" : {
-
-    },
-    "Hello, World!" : {
 
     },
     "OK" : {

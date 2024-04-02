@@ -33,6 +33,9 @@
 		ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39452BBBE47F0019C6FC /* UIApplication+Ext.swift */; };
 		ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39492BBBF2790019C6FC /* PokemonListViewModel.swift */; };
 		ECAC394C2BBBF28B0019C6FC /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC394B2BBBF28B0019C6FC /* PokemonListView.swift */; };
+		ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC394E2BBBFC2E0019C6FC /* PokeItemView.swift */; };
+		ECAC39512BBBFC8F0019C6FC /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39502BBBFC8F0019C6FC /* ContainerView.swift */; };
+		ECAC39542BBBFE620019C6FC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ECAC39532BBBFE620019C6FC /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,8 @@
 		ECAC39472BBBE50E0019C6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ECAC39492BBBF2790019C6FC /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
 		ECAC394B2BBBF28B0019C6FC /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
+		ECAC394E2BBBFC2E0019C6FC /* PokeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeItemView.swift; sourceTree = "<group>"; };
+		ECAC39502BBBFC8F0019C6FC /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAC39542BBBFE620019C6FC /* SDWebImageSwiftUI in Frameworks */,
 				ECAC390F2BBBCC6D0019C6FC /* FirebaseAuth in Frameworks */,
 				ECAC39112BBBCC6D0019C6FC /* FirebaseAuthCombine-Community in Frameworks */,
 				ECAC391E2BBBCEBA0019C6FC /* Alamofire in Frameworks */,
@@ -134,6 +140,7 @@
 		ECAC38DD2BBBCA180019C6FC /* PokeApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC394D2BBBFC1B0019C6FC /* Component */,
 				ECAC39472BBBE50E0019C6FC /* Info.plist */,
 				ECAC39292BBBCF540019C6FC /* Data */,
 				ECAC39272BBBCF2A0019C6FC /* Feature */,
@@ -309,6 +316,15 @@
 			path = PokemonList;
 			sourceTree = "<group>";
 		};
+		ECAC394D2BBBFC1B0019C6FC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC394E2BBBFC2E0019C6FC /* PokeItemView.swift */,
+				ECAC39502BBBFC8F0019C6FC /* ContainerView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,6 +348,7 @@
 				ECAC39172BBBCDE80019C6FC /* GoogleSignInSwift */,
 				ECAC391D2BBBCEBA0019C6FC /* Alamofire */,
 				ECAC391F2BBBCEBA0019C6FC /* AlamofireDynamic */,
+				ECAC39532BBBFE620019C6FC /* SDWebImageSwiftUI */,
 			);
 			productName = PokeApp;
 			productReference = ECAC38DB2BBBCA180019C6FC /* PokeApp.app */;
@@ -414,6 +431,7 @@
 				ECAC39142BBBCDE70019C6FC /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				ECAC391C2BBBCEBA0019C6FC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				ECAC39342BBBD4310019C6FC /* XCRemoteSwiftPackageReference "Mocker" */,
+				ECAC39522BBBFE610019C6FC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = ECAC38DC2BBBCA180019C6FC /* Products */;
 			projectDirPath = "";
@@ -470,6 +488,8 @@
 				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
 				ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */,
+				ECAC39512BBBFC8F0019C6FC /* ContainerView.swift in Sources */,
+				ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -885,6 +905,14 @@
 				minimumVersion = 3.0.2;
 			};
 		};
+		ECAC39522BBBFE610019C6FC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -922,6 +950,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ECAC39342BBBD4310019C6FC /* XCRemoteSwiftPackageReference "Mocker" */;
 			productName = Mocker;
+		};
+		ECAC39532BBBFE620019C6FC /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECAC39522BBBFE610019C6FC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
