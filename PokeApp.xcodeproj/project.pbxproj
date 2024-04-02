@@ -39,6 +39,10 @@
 		ECAC39582BBC02AD0019C6FC /* NameWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */; };
 		ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39592BBC03240019C6FC /* EvolutionLink.swift */; };
 		ECAC395C2BBC03760019C6FC /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC395B2BBC03760019C6FC /* Species.swift */; };
+		ECAC395F2BBC03F40019C6FC /* NameWrapperResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC395E2BBC03F40019C6FC /* NameWrapperResponse.swift */; };
+		ECAC39612BBC03FD0019C6FC /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39602BBC03FD0019C6FC /* PokemonResponse.swift */; };
+		ECAC39632BBC040A0019C6FC /* EvolutionLinkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */; };
+		ECAC39652BBC04160019C6FC /* SpeciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,10 @@
 		ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameWrapper.swift; sourceTree = "<group>"; };
 		ECAC39592BBC03240019C6FC /* EvolutionLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLink.swift; sourceTree = "<group>"; };
 		ECAC395B2BBC03760019C6FC /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		ECAC395E2BBC03F40019C6FC /* NameWrapperResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameWrapperResponse.swift; sourceTree = "<group>"; };
+		ECAC39602BBC03FD0019C6FC /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
+		ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionLinkResponse.swift; sourceTree = "<group>"; };
+		ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +275,7 @@
 		ECAC392E2BBBCF810019C6FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC395D2BBC03E10019C6FC /* Network */,
 				ECAC392F2BBBCF870019C6FC /* Domain */,
 			);
 			path = Models;
@@ -332,6 +341,17 @@
 				ECAC39502BBBFC8F0019C6FC /* ContainerView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		ECAC395D2BBC03E10019C6FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC395E2BBC03F40019C6FC /* NameWrapperResponse.swift */,
+				ECAC39602BBC03FD0019C6FC /* PokemonResponse.swift */,
+				ECAC39622BBC040A0019C6FC /* EvolutionLinkResponse.swift */,
+				ECAC39642BBC04160019C6FC /* SpeciesResponse.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,8 +510,10 @@
 				ECAC394C2BBBF28B0019C6FC /* PokemonListView.swift in Sources */,
 				ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */,
 				ECAC39582BBC02AD0019C6FC /* NameWrapper.swift in Sources */,
+				ECAC39652BBC04160019C6FC /* SpeciesResponse.swift in Sources */,
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
 				ECAC395C2BBC03760019C6FC /* Species.swift in Sources */,
+				ECAC39632BBC040A0019C6FC /* EvolutionLinkResponse.swift in Sources */,
 				ECAC39432BBBDFFE0019C6FC /* Route.swift in Sources */,
 				ECAC38E32BBBCA180019C6FC /* Pokemon.swift in Sources */,
 				ECAC392C2BBBCF6F0019C6FC /* PersistentManager.swift in Sources */,
@@ -499,7 +521,9 @@
 				ECAC393B2BBBDA800019C6FC /* LoginViewModel.swift in Sources */,
 				ECAC38DF2BBBCA180019C6FC /* PokeAppApp.swift in Sources */,
 				ECAC39462BBBE47F0019C6FC /* UIApplication+Ext.swift in Sources */,
+				ECAC395F2BBC03F40019C6FC /* NameWrapperResponse.swift in Sources */,
 				ECAC39512BBBFC8F0019C6FC /* ContainerView.swift in Sources */,
+				ECAC39612BBC03FD0019C6FC /* PokemonResponse.swift in Sources */,
 				ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */,
 				ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,

@@ -12,8 +12,8 @@ import SwiftData
 final class Pokemon {
     var id: Int
     var name: String
-    var height: Int // counted in decimeters
-    var weight: Int // counted in hectograms
+    var height: Int
+    var weight: Int
     var stats: [Stat]
     var types: [PokemonType]
     
@@ -33,11 +33,11 @@ final class Pokemon {
         self.types = types
     }
     
-    var heightInMeter: String {
+    var meterHeight: String {
         String(format: "%.1f", Double(height) / 10.0)
     }
     
-    var weightInKg: String {
+    var kgWeight: String {
         String(format: "%.1f", Double(weight) / 10.0)
     }
     
