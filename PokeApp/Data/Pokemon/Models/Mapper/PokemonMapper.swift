@@ -9,24 +9,24 @@ import Foundation
 
 extension NameWrapper {
     convenience init(from response: NameWrapperResponse) {
-        self.init(name: response.name, url: response.url.absoluteString)
+        self.init(name: response.name ?? "", url: response.url?.absoluteString ?? "")
     }
 }
 
 extension Pokemon {
     convenience init(from response: PokemonResponse) {
-        let stats = response.stats.compactMap {
+        let stats = (response.stats ?? []).compactMap {
             return Stat(from: $0)
         }
-        let type = response.types.compactMap {
+        let type = (response.types ?? []).compactMap {
             return PokemonType(from: $0)
         }
         
         self.init(
-            id: response.id,
-            name: response.name,
-            height: response.height,
-            weight: response.weight,
+            id: response.id ?? 0,
+            name: response.name ?? "",
+            height: response.height ?? 0,
+            weight: response.weight ?? 0,
             stats: stats,
             types: type
         )
@@ -35,19 +35,28 @@ extension Pokemon {
 
 extension Stat {
     convenience init(from response: StatResponse) {
-        self.init(baseStat: response.baseStat, stat: NameWrapper(from: response.stat))
+        self.init(
+            baseStat: response.baseStat ?? 0,
+            stat: NameWrapper(from: response.stat ?? NameWrapperResponse(name: "", url: nil))
+        )
     }
 }
 
 extension PokemonType {
     convenience init(from response: PokemonTypeResponse) {
-        self.init(slot: response.slot, type: NameWrapper(from: response.type))
+        self.init(
+            slot: response.slot ?? 0,
+            type: NameWrapper(from: response.type ?? NameWrapperResponse(name: "", url: nil))
+        )
     }
 }
 
 extension Species {
     convenience init(from response: SpeciesResponse) {
-        self.init(id: response.id, evolutionChain: SpeciesEvolutionChain(from: response.evolutionChain))
+        self.init(
+            id: response.id ?? 0,
+            evolutionChain: SpeciesEvolutionChain(from: response.evolutionChain ?? SpeciesResponse.EvolutionChainResponse(url: URL(string: "") ?? (NSURL() as URL)))
+        )
     }
 }
 
@@ -59,16 +68,16 @@ extension SpeciesEvolutionChain {
 
 extension EvolutionLink {
     convenience init(from response: EvolutionLinkResponse) {
-        self.init(id: response.id, chain: ChainLink(from: response.chain))
+        self.init(id: response.id ?? 0, chain: ChainLink(from: response.chain ?? ChainLinkResponse(species: nil, evolvesTo: nil)))
     }
 }
 
 extension ChainLink {
     convenience init(from response: ChainLinkResponse) {
-        let evolves = response.evolvesTo.compactMap {
+        let evolves = (response.evolvesTo ?? []).compactMap {
             ChainLink(from: $0)
         }
-        self.init(species: NameWrapper(from: response.species), evolvesTo: evolves)
+        self.init(species: NameWrapper(from: response.species ?? NameWrapperResponse(name: "", url: nil)), evolvesTo: evolves)
     }
 }
 

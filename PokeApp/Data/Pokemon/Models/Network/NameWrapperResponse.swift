@@ -8,17 +8,17 @@
 import Foundation
 
 struct ListResponse<T: Codable>: Codable {
-    let results: [T]
+    let results: [T]?
 }
 
 struct NameWrapperResponse: Identifiable, Codable, Hashable {
-    let name: String
-    let url: URL
+    let name: String?
+    let url: URL?
 }
 
 extension NameWrapperResponse {
     var id: String {
-        return url.lastPathComponent
+        return url?.lastPathComponent ?? ""
     }
     
     var imageUrl: URL {

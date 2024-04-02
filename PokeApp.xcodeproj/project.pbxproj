@@ -46,6 +46,10 @@
 		ECAC39682BBC05800019C6FC /* PokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39672BBC05800019C6FC /* PokemonMapper.swift */; };
 		ECAC396A2BBC0A090019C6FC /* JSONDecoder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39692BBC0A090019C6FC /* JSONDecoder+Ext.swift */; };
 		ECAC396C2BBC0A4F0019C6FC /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC396B2BBC0A4F0019C6FC /* Array+Ext.swift */; };
+		ECAC396F2BBC0A910019C6FC /* PokemonLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC396E2BBC0A910019C6FC /* PokemonLocalDataSource.swift */; };
+		ECAC39712BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39702BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift */; };
+		ECAC39742BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39732BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift */; };
+		ECAC39772BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAC39762BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,10 @@
 		ECAC39672BBC05800019C6FC /* PokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMapper.swift; sourceTree = "<group>"; };
 		ECAC39692BBC0A090019C6FC /* JSONDecoder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Ext.swift"; sourceTree = "<group>"; };
 		ECAC396B2BBC0A4F0019C6FC /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		ECAC396E2BBC0A910019C6FC /* PokemonLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLocalDataSource.swift; sourceTree = "<group>"; };
+		ECAC39702BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRemoteDataSource.swift; sourceTree = "<group>"; };
+		ECAC39732BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDefaultLocalDataSource.swift; sourceTree = "<group>"; };
+		ECAC39762BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDefaultRemoteDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +281,7 @@
 		ECAC392D2BBBCF730019C6FC /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC396D2BBC0A860019C6FC /* DataSource */,
 				ECAC392E2BBBCF810019C6FC /* Models */,
 			);
 			path = Pokemon;
@@ -369,6 +378,33 @@
 				ECAC39672BBC05800019C6FC /* PokemonMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		ECAC396D2BBC0A860019C6FC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39752BBC0AC40019C6FC /* Remote */,
+				ECAC39722BBC0AAE0019C6FC /* Local */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		ECAC39722BBC0AAE0019C6FC /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC396E2BBC0A910019C6FC /* PokemonLocalDataSource.swift */,
+				ECAC39732BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		ECAC39752BBC0AC40019C6FC /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC39702BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift */,
+				ECAC39762BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,8 +562,10 @@
 			files = (
 				ECAC394C2BBBF28B0019C6FC /* PokemonListView.swift in Sources */,
 				ECAC394A2BBBF2790019C6FC /* PokemonListViewModel.swift in Sources */,
+				ECAC39772BBC0AD40019C6FC /* PokemonDefaultRemoteDataSource.swift in Sources */,
 				ECAC39582BBC02AD0019C6FC /* NameWrapper.swift in Sources */,
 				ECAC39652BBC04160019C6FC /* SpeciesResponse.swift in Sources */,
+				ECAC39712BBC0A9D0019C6FC /* PokemonRemoteDataSource.swift in Sources */,
 				ECAC39682BBC05800019C6FC /* PokemonMapper.swift in Sources */,
 				ECAC38E12BBBCA180019C6FC /* LoginView.swift in Sources */,
 				ECAC395C2BBC03760019C6FC /* Species.swift in Sources */,
@@ -545,7 +583,9 @@
 				ECAC39612BBC03FD0019C6FC /* PokemonResponse.swift in Sources */,
 				ECAC395A2BBC03240019C6FC /* EvolutionLink.swift in Sources */,
 				ECAC394F2BBBFC2E0019C6FC /* PokeItemView.swift in Sources */,
+				ECAC39742BBC0ABF0019C6FC /* PokemonDefaultLocalDataSource.swift in Sources */,
 				ECAC396A2BBC0A090019C6FC /* JSONDecoder+Ext.swift in Sources */,
+				ECAC396F2BBC0A910019C6FC /* PokemonLocalDataSource.swift in Sources */,
 				ECAC393E2BBBDAFB0019C6FC /* Phase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

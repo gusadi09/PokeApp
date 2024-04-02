@@ -8,8 +8,8 @@
 import Foundation
 
 struct SpeciesResponse: Codable, Equatable {
-    let id: Int
-    let evolutionChain: Self.EvolutionChainResponse
+    let id: Int?
+    let evolutionChain: Self.EvolutionChainResponse?
     
     struct EvolutionChainResponse: Codable, Equatable {
         let url: URL
