@@ -33,7 +33,8 @@
         }
       }
     },
-    "Getting pokemons..." : {
+    "Fetch pokemons..." : {
+      "extractionState" : "stale",
       "localizations" : {
         "id" : {
           "stringUnit" : {
@@ -43,7 +44,7 @@
         }
       }
     },
-    "Hello, World!" : {
+    "Fetching pokemons..." : {
 
     },
     "OK" : {

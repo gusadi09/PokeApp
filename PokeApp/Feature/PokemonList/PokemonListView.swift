@@ -41,7 +41,7 @@ struct PokemonListView: View {
             if viewModel.pokemons.isEmpty {
                 if viewModel.phase == .loading {
                     ProgressView() {
-                        Text("Getting pokemons...")
+                        Text("Fetching pokemons...")
                     }.controlSize(.large)
                 } else if viewModel.isError && viewModel.phase != .loading {
                     errorView()

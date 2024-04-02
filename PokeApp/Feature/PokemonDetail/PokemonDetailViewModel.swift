@@ -8,13 +8,15 @@
 import Foundation
 
 final class PokemonDetailViewModel: ObservableObject {
-    let pokeId: String
+    
     @Published var pokemon: PokemonResponse?
     @Published var evolutions: EvolutionLinkResponse?
     @Published var phase: Phase = .initial
     @Published var isError: Bool = false
     
     private let pokemonRepository: PokemonRepository
+    
+    let pokeId: String
     
     init(
         for pokeId: String,

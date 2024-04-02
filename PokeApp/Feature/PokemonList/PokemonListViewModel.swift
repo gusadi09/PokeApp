@@ -24,7 +24,7 @@ final class PokemonListViewModel: ObservableObject {
         isError = false
         
         do {
-            pokemons.appendWithoutDuplicate(try await pokemonRepository.getPokemons(on: pokemons.count / 20))
+            pokemons.appendWithoutDuplicate(try await pokemonRepository.getPokemons(on: pokemons.count))
             
             phase = .initial
         } catch {

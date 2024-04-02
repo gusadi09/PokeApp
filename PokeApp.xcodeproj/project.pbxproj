@@ -301,22 +301,11 @@
 		ECAC392E2BBBCF810019C6FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ECAC39882BBC5A000019C6FC /* SwiftDataModel */,
 				ECAC39662BBC056B0019C6FC /* Mapper */,
 				ECAC395D2BBC03E10019C6FC /* Network */,
-				ECAC392F2BBBCF870019C6FC /* Domain */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		ECAC392F2BBBCF870019C6FC /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				ECAC38E22BBBCA180019C6FC /* Pokemon.swift */,
-				ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */,
-				ECAC39592BBC03240019C6FC /* EvolutionLink.swift */,
-				ECAC395B2BBC03760019C6FC /* Species.swift */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		ECAC39372BBBD4C60019C6FC /* Splash */ = {
@@ -442,6 +431,17 @@
 				ECAC39862BBC24820019C6FC /* PokemonDetailView.swift */,
 			);
 			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		ECAC39882BBC5A000019C6FC /* SwiftDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECAC38E22BBBCA180019C6FC /* Pokemon.swift */,
+				ECAC39572BBC02AD0019C6FC /* NameWrapper.swift */,
+				ECAC39592BBC03240019C6FC /* EvolutionLink.swift */,
+				ECAC395B2BBC03760019C6FC /* Species.swift */,
+			);
+			path = SwiftDataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
